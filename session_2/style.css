@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+}
+.left-nav {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  width: 30%;
+  margin-left: auto;
+}
+.right-nav {
+  float: left;
+  padding: 1rem;
+}
+.right-nav li {
+  font-size: 1.5rem;
+}
+#ax {
+  color: #fff;
+  font-weight: bold;
+}
+#it {
+  color: rgb(255, 136, 0);
+}
+
+li {
+  list-style: none;
+  color: #fff;
+}
+.center-div {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+header {
+  min-height: 100vh;
+  background: linear-gradient(#00000070, #00000070), url("hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
