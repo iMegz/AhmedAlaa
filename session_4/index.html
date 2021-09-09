@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+    <style>
+      * {
+        font-family: "Courier New", Courier, monospace;
+      }
+      .form-group {
+        text-align: center;
+        padding: 0.5rem;
+      }
+      textarea {
+        resize: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form enctype="multipart/form-data" action="index.html" method="GET">
+      <h1 style="text-align: center; text-transform: uppercase">
+        Session 4 | Forms
+      </h1>
+      <div class="form-group">
+        <label for="username">Username : </label>
+        <input
+          type="text"
+          name="username"
+          id="username"
+          autocomplete="off"
+          readonly
+          value="ahmed"
+        />
+      </div>
+      <div class="form-group">
+        <label for="email">Email :</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          value="ahmed@gamil.com"
+          disabled
+        />
+      </div>
+      <div class="form-group">
+        <label for="password">Password :</label>
+        <input
+          autofocus
+          type="password"
+          name="password"
+          id="password"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label for="age">Age :</label>
+        <input type="number" min="0" max="60" name="age" id="age" />
+      </div>
+      <div class="form-group">
+        <label>I love</label>
+        <input type="checkbox" name="fav" value="Burger" /> Burger
+        <input type="checkbox" name="fav" value="Pizza" checked /> Pizza
+        <input type="checkbox" name="fav" value="Potatoes" /> Potatoes
+      </div>
+      <div class="form-group">
+        <input type="radio" name="gender" value="male" checked /> Male
+        <input type="radio" name="gender" value="female" /> Female
+      </div>
+      <div class="form-group">
+        <label for="rate">Rate us</label>
+        <input type="range" min="1" max="5" name="rate" id="rate" value="5" />
+      </div>
+      <div class="form-group">
+        <label for="time">time</label>
+        <input type="time" name="time" id="time" />
+      </div>
+      <div class="form-group">
+        <label for="date">date</label>
+        <input type="date" name="date" id="date" />
+      </div>
+      <div class="form-group">
+        <label for="month">month</label>
+        <input type="month" name="month" id="month" />
+      </div>
+      <div class="form-group">
+        <label for="week">week</label>
+        <input type="week" name="week" id="week" />
+      </div>
+      <div class="form-group">
+        <label for="file">File</label>
+        <input type="file" name="file" id="file" />
+      </div>
+      <div class="form-group">
+        <input type="hidden" name="hidden" id="hidden" value="hidden" />
+      </div>
+      <div class="form-group">
+        <label for="color">Color</label>
+        <input type="color" name="color" id="color" value="#ff00ff" />
+      </div>
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea name="message" id="message" cols="20" rows="5"></textarea>
+      </div>
+      <div class="form-group">
+        <label for="food">Food</label>
+        <select name="food" id="food">
+          <optgroup label="Food">
+            <option disabled value="Pizza">Pizza</option>
+            <option value="Buger">Buger</option>
+          </optgroup>
+          <optgroup label="Cities">
+            <option selected value="Cairo">Cairo</option>
+            <option value="Paris">Paris</option>
+          </optgroup>
+        </select>
+      </div>
+      <div class="form-group">
+        <button type="reset">Reset</button>
+      </div>
+      <div class="form-group">
+        <button type="submit">Login</button>
+      </div>
+    </form>
+  </body>
+</html>
