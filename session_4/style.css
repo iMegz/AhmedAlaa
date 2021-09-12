@@ -1,0 +1,13 @@
+:root {
+  --orangeMain: rgb(255, 125, 32);
+  --orangeSec: rgb(253, 106, 0);
+}
+#IT {
+  color: var(--mainColor);
+}
+#AX {
+  font-weight: 700;
+}
+h1 {
+  font-weight: 400;
+}
