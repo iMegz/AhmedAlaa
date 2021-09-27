@@ -9,7 +9,7 @@ h3 {
   text-align: center;
   padding: 1rem;
 }
-.game-window {
+#game-window {
   width: 80vh;
   height: 80vh;
   border: 2px solid #000000;
@@ -17,7 +17,7 @@ h3 {
   margin: auto;
 }
 @media only screen and (max-width: 600px) {
-  .game-window {
+  #game-window {
     width: 90vw;
     height: 90vw;
   }
