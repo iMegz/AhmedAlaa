@@ -11,18 +11,40 @@
   <body>
     <main>
       <h1>Converter</h1>
-      <select name="type" id="type">
+      <select name="type" id="type" onchange="updateTypes()">
         <option value="mass">Mass</option>
         <option value="dist">Distance</option>
       </select>
       <div class="values">
         <div>
-          <input type="number" name="first" id="first" min="0" value="0" />
-          <select name="first_type" id="first_type"></select>
+          <input
+            type="number"
+            name="first"
+            id="first"
+            min="0"
+            value="0"
+            oninput="updateValues(1)"
+          />
+          <select
+            name="first_type"
+            id="first_type"
+            onchange="updateValues(0)"
+          ></select>
         </div>
         <div>
-          <input type="number" name="second" id="second" min="0" value="0" />
-          <select name="second_type" id="second_type"></select>
+          <input
+            type="number"
+            name="second"
+            id="second"
+            min="0"
+            value="0"
+            oninput="updateValues(0)"
+          />
+          <select
+            name="second_type"
+            id="second_type"
+            onchange="updateValues(1)"
+          ></select>
         </div>
       </div>
     </main>

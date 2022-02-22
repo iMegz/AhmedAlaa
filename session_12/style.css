@@ -28,6 +28,7 @@ h1 {
 }
 select,
 input {
+  text-transform: capitalize;
   margin-top: 0.2rem;
   width: 300px;
   border: 2px solid #000000;
